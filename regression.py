@@ -15,9 +15,9 @@ from bokeh.models.widgets import Slider, Button, Div, Paragraph
 ### may be modified without concern, if required. ("View" Part 1)         ###
 ###-----------------------------------------------------------------------###
 # The format for this section is: default, range[Lower, Upper, Step Size]
-d_nsamp, r_nsamp = 100, [50, 500, 50] # Number of samples
+d_nsamp, r_nsamp = 200, [50, 500, 50] # Number of samples
 d_bias, r_bias = 0, [-50, 50, 5] # Bias
-d_noise, r_noise = 3, [0, 20, 1] # Amount of noise
+d_noise, r_noise = 10, [0, 20, 1] # Amount of noise
 
 ###-----------------------------------------------------------------------###
 ###----------------------GRAPHICAL USER INTERFACE-------------------------###
