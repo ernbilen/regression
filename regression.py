@@ -269,7 +269,7 @@ plot_clear.on_click(clear_plot)
 p1 = Div(text="<b>AN INTERACTIVE REGRESSION SIMULATOR</b>", width=200, height=30, \
          style={'font-size': '140%', 'color': 'dimgray'}, sizing_mode="stretch_width")
 p2 = Div(text="Interact with the widgets \n on the left to simulate a biased (or an unbiased) sample. \
-Blue dashed line is the true regression", width=200, height=10, \
+Blue dashed line is the true regression", width=1500, height=10, \
          style={'font-size': '100%', 'color': 'black'}, sizing_mode="stretch_width")
 p3 = Div(text="line describing the true relationship between X and Y.", width=200, \
          height=50, style={'font-size': '100%', 'color': 'black'}, sizing_mode="stretch_width")
@@ -279,7 +279,7 @@ p3 = Div(text="line describing the true relationship between X and Y.", width=20
 
 col_inputs = column(plot_ctls, ctl_inputs)
 col_plots = column(plot_data)
-row_page2 = row(col_inputs, col_plots, width=1200)
+row_page2 = row(col_inputs, col_plots, width=620)
 row_page = column(p1,p2,p3,row_page2)
 curdoc().add_root(row_page)
 curdoc().title = "Linear Regression Simulator"
